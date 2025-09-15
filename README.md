@@ -71,12 +71,4 @@ Student Registration System/
 ## 📍 Author
 
 **Ritushree L.**  
-[GitHub Link] <!-- Replace this with your GitHub repo URL -->
-
----
-
-## ✅ Submission Instructions
-
-- Ensure **separate commits** for `index.html`, `style.css`, `script.js`, and `README.md`.
-- Remove `node_modules` if using Tailwind or any npm package.
-- Include assets folder with all icons/images used.
+[(https://github.com/Ritushree12/Smart-Student-Manager)]
