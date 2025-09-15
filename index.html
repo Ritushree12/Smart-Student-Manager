@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Manager</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/student.png">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+        <!-- Header with title and tagline -->
+    <header class="header">Smart Student Manager
+        <br>
+        <h6 class="tagline"><i>Manage student records easily from today...</i></h6>
+    </header>
+    <!-- Modal for editing student records -->
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span><!-- Close button for modal -->
+            <h2>Edit Student</h2>
+            <form id="editForm">
+                <!-- Input fields for editing -->
+                <label for="editName">Name:</label><br>
+                <input type="text" id="editName" required><br><br>
+
+                <label for="stidEdit">Student ID: </label><br>
+                <input type="text" id="stidEdit" disabled><br><br>
+
+                <label for="editEmail">Email ID:</label><br>
+                <input type="email" id="editEmail" required><br><br>
+
+                <label for="editPhone">Phone Number:</label><br>
+                <input type="tel" id="editPhone" required><br><br>
+
+                <button type="submit" id="save">Save</button>
+            </form>
+        </div>
+    </div>
+<!-- Main container with form and table -->
+    <div class="container">
+        <!-- Form to add new student -->
+        <form id="myForm">
+            <label for="name">Student Name :</label><br>
+            <input type="text" id="name" name="name" placeholder="John" required>
+            <br><br>
+
+            <label for="stid">Student ID :</label><br>
+            <input type="text" id="stid" name="studentID" required><br>
+            <span class="warning-msg">Student ID already exists. Please enter a unique ID.</span>
+            <br>
+
+            <label for="emailId">Email ID :</label><br>
+            <input type="email" id="emailId" name="emailId" placeholder="abc@mail.com" required>
+            <br><br>
+
+            <label for="phoneNumber">Phone Number :</label><br>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="9876543210" required>
+            <br>
+            <span class="ph-warning">Please enter a valid 10 digit phone number.</span><br>
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+<!-- Table container for student records -->
+        <div class="outer-container">
+            <h1 class="student-rec"> Student records</h1>
+            <div class="table-container">
+                <table id="Students-table">
+                    <tr id="table-header">
+                        <th>Name</th>
+                        <th>Student Id</th>
+                        <th>Email Id</th>
+                        <th>Phone Number</th>
+                        <th class="actions" id="actions-header"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
