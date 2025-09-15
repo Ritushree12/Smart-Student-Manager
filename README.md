@@ -71,4 +71,4 @@ Student Registration System/
 ## 📍 Author
 
 **Ritushree L.**  
-[(https://github.com/Ritushree12/Smart-Student-Manager)]
+https://github.com/Ritushree12/Smart-Student-Manager
